@@ -1,0 +1,512 @@
+﻿/*
+	Theme Name: Projects Theme UUDK
+	Theme URI: http://html5blank.com
+	Description: Developed out off HTML5 Blank WordPress Theme
+	Version: 1
+	Author: Søren Nørup
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/********ColorScheme*******/
+/*
+ 
+    
+    #74AFAD
+    #D9853B
+    #ECECEA
+    #2A682A
+
+    
+     #616d0a //dark green (links)
+  #d89c44  // Hover color orange
+ */
+body {
+  width:100% !important;
+}
+a {
+  text-decoration: none;color: #616d0a;
+}
+
+a:hover{
+    color:#d89c44;
+   text-decoration: none;
+}
+p{
+   font-size:1.05em;
+   }
+h1{
+    
+    font-size:3em;
+    color: #ffffff;
+   }
+  
+h2{
+  font-size: 2em;
+  
+}
+
+h3 {
+	font-size:1.3em;
+  font-weight: 600;
+	
+}
+h4{
+  font-size:1.2em;
+  font-weight: 600;
+}
+/******************* For the editor format to work **************/
+blockquote {
+	font-style: italic;
+	padding: 8px 30px 15px;
+}
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/******************* End For the editor format to work **************/
+
+.admin-links{
+  margin-left:15px;
+}
+
+.breadcrumb{
+  font-size: 0.8em;
+background-color: #ECECEA;
+opacity: 0.7;
+margin-top:0;
+
+
+}
+#crumbs{
+    display:inline;
+    margin-right:5px;
+}
+
+
+ a:link,a:visited,a:active {
+  text-decoration: none;color:#616d0a;
+}
+
+/* Hide class that holds the mobile menu*/
+.topnav{
+  display:none;
+}
+/* Hide the mobile burger icon  */
+.burger .fa{
+  display:none;
+}
+img{
+  
+}
+.close{
+  position:absolute;
+  height:50px;
+  right:15px;
+  top:10px;
+  z-index:20;
+  font-size:12px;
+}
+
+
+.projekt-logo{
+  position: absolute;
+  left: 15px;
+  z-index: 999;
+  top:50px;
+  
+}
+
+.projekt-logo img{
+  width: 100%;
+  height: 100%;
+}
+.mobile-logo{
+  display:none;
+}
+
+.country-flags{
+   float: right;
+
+}
+.country-flags ul li{
+   list-style-type: none;
+   display: inline;
+   
+}
+.country-flags img{
+   width:60px;
+}
+   
+@keyframes fadein{
+   from{opacity:0;}
+   to{opacity:1;}
+}
+.container{
+   animation: fadein 1s;
+}
+nav{
+   margin-top:10px;
+}
+
+.overlay{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   z-index: 2;
+   height:200px;
+   background:rgba(97,109,10,0.2);
+}
+.page-title{
+	position:absolute;
+	z-index:3;
+  width: 100%;
+}
+
+.jumbotron{ 
+    height: 200px;
+    background-image: url("http://xn--ungevrk-qxa.dk/wp-content/uploads/2018/07/adult-casual-clothes-296881.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+.jumbotron {
+    padding: 0 0;
+}
+
+
+
+.sb-preview-img{
+    
+    height: 150px;
+  
+ }
+
+
+.sb-preview-img:hover{
+    opacity: 0.6;
+  }
+  .image-card-body{
+    
+  }
+ 
+.bg-1{
+   /*background-image: linear-gradient(#5c7131, #a0be61);*/
+    background-color:#2a672b;
+    
+    /*background:rgba(40, 167, 69,0.1);*/
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.bg-2{
+    background-image: linear-gradient(#fff,#ECECEA);
+    /*background-color:#ECECEA;*/
+  /*background:rgba(216, 156, 68,0.1);*/
+    padding: 20px;
+    margin-bottom: 10px;
+    color:#808080;
+}
+.bg-3{
+    background-color:#65b790;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+.card-body{
+  
+  margin: 0 auto;
+  width:80%;
+  height:80%;
+  
+}
+
+.card-body img{
+  margin-top: -10px;
+  text-align: center;
+  
+}
+´
+.loop p{
+    font-size: 0.9em;
+}
+.wp-post-image{
+   max-width: 100%;
+
+}
+.view-article{
+  
+}
+/****** align the sidebar bokses with the postview boxes***********/
+.post-view{ 
+  margin-top:40px;
+}
+/****** align the sidebar bokses with the postview boxes end***********/
+
+.sponsor-logo img{
+  width: 200px !important;
+  margin-left: -3px;
+  
+}
+.custom-excerpt-text{
+  font-size: 14px !important;
+  
+}
+.textbox{
+  margin-left:15px;
+  
+}
+
+footer{
+
+    width: 100%;
+    padding:15px;
+    background-color:#ececea; 
+    height:100px;  
+ }
+ 
+.container-height{
+   
+    min-height: 500px;
+}
+
+ .card{
+    width: 100%;
+    
+ }
+ .date{
+  font-size:12px;
+ }
+ .view-article{
+  
+ float:right;
+  
+ }
+ .card a{
+  color:#333;
+ }
+ .card li:hover{
+  background-color:#d89c44 ;
+  color: #fff;
+ }
+ .sb-preview .card .card-footer .btn {
+    font-size: 18px;
+}
+.btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: 0 0 0 .2rem rgba(255,255,255,0.5);
+}
+.btn {
+    
+    border: 0;
+    font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1);
+    transition: all 0.15s ease-in-out;
+}
+.btn-secondary {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.sb-preview {
+    margin-bottom: 30px;
+}
+
+.sb-preview .card .sb-preview-img {
+    transition: all 0.2s ease-in-out;
+}
+.btn-secondary:hover{
+  background-color: #D99C44;
+}
+
+.badge-pill{
+  background-color:#DFA551;
+}
+.card:hover{
+  transition: all 0.15s ease-in-out;
+}
+.uudk-copyright{
+ 
+}
+.project-logo{
+  float:right;
+}
+
+
+@media (max-width: 1200px) {
+  
+  
+  }
+  @media (max-width: 400px) {
+    
+  .jumbotron img{
+    width: 80%;
+  }
+ 
+  }
+    @media (max-width: 600px) {
+    
+    .site-info .btn{
+    width:80%;
+  }
+  
+ 
+  .background-freeze{
+    position: relative;
+    z-index: -999;
+    background-color:#333;
+    height: 2000px;
+  }
+  .project-logo,.norm-menu, .search, .partner-login {display:none;}
+  
+  
+  .closeX{
+    background:url("https://ungemedkant.dk/wp-content/uploads/2018/10/close_icon-e1539355982320.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index:10000;
+    width: 50px;
+  }
+   
+  .jumbotron img {  
+    display: none;
+    
+  }
+  .jumbotron{
+   
+    position:relative;
+    
+    z-index:-1;
+    width:100%;
+  }
+  
+  .mobile-logo{
+    display:block;
+    
+   
+  }
+  
+  #mobile-header{
+    background-color:#fff;
+    position: fixed;
+    z-index: 2;
+    height:100px;
+  }
+  
+  main{
+   
+  }
+  .mobile-logo img{
+    margin-top:20px;
+    margin-left:5px;
+   width:90%;
+   height: 90%;
+  
+  }
+  .right-sidebar-menu{
+    display:none;
+  }
+  .site-info .btn{
+    width:80%;
+  }
+
+ 
+  .burger .fa {
+      display:inline;
+      position: fixed;
+      z-index:100;
+      top:10px;
+      right:10px;   
+    }
+    
+  .topnav{
+      font-size:18px;
+      position: fixed;
+      z-index:900; 
+      width: 95%;
+      right:30px;
+      background-color:#fff;
+    }
+    
+  .nav-mobile{
+      margin-top:20px; 
+    }
+    
+  .nav-item-mobile {
+      margin-bottom:10px;
+      display:block;
+      
+    }
+    
+  .plus-sign{
+      position: relative;
+      top:-8px;
+      z-index:100;
+    }
+    
+  .nav-mobil-children li a{
+     color:#fff;
+     width:200px;
+    }
+    
+  .sub ul{
+      padding: 10px;
+    }
+    
+  .menu{
+      height: 1000px;
+      background-color:grey !important;
+    }
+  
+  .responsive {position: relative;}
+   a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  img.grafics {
+        width:100%;
+      }
+      
+  .search-form-mobile{
+    background-color:#fff;
+    padding-left:15px;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-left: 23px;
+    border-bottom: solid grey 0.5px;
+    border-top: solid grey 0.5px;
+  }
+  .lower-menu li{
+    font-size: 15px;
+    
+    }    
+
+  }
+
