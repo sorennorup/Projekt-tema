@@ -506,7 +506,17 @@ footer{
   .lower-menu li{
     font-size: 15px;
     
-    }    
+    }
+    footer {
+      height:auto;
+    }
+    .sidebar-menu{
+      display:none;
+    }
+    img {
+      width: 100%;
+    }
+
 
   }
 

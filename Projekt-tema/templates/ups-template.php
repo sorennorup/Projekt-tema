@@ -65,7 +65,7 @@ get_header(); ?>
 	  <?php dynamic_sidebar( 'UPS seneste nyheder' ); ?>
 
     </div>
-    <div class = "bg-2 card">
+    <div class = "bg-2 card sidebar-menu">
     
   <?php $myWidget = new Widget();?>
   <?php  $myWidget->displayResourcesWidget();  ?>
