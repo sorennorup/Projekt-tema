@@ -1,10 +1,13 @@
-<?php /* Template Name:Unge på sporet template*/ get_header(); ?>
+<?php /* Template Name:Frontpage*/ get_header(); ?>
 
 <?php
 
-    //TO DO  CREATE FUNCTION  of this
+    //TO DO
 	
 	//TAKEs PARENT CAT ID AS ARGUMENT AND RETURNS ARRAY ALL CHILD CATEGORIES AND THEIR PROPERTIES
+	
+	// create widget to display the subheader text
+	
 	$ressource_properties = array();
     $child_arg = array( 'hide_empty' => false );
     $child_cat = get_terms( 'category', $child_arg );
@@ -33,37 +36,26 @@
 
 <div class="row">
 	
-
-<div class="col-sm-9 ">
+ <!--  The subheader text area -->
+<div class="col-sm-12 ">
+	<div class="row mb-4 sub-header " style="margin-left: 4px; margin-right: 5px;">
+<div class="col-lg-5 bg-4 left-box">
+      <?php dynamic_sidebar('Subheader left'); ?>
+     </div>
+<div class="col-lg-7 bg-2 right-box ">
+	 <?php dynamic_sidebar('Subheader right'); ?>
+</div>
+	</div>
+	
 	 
     <?php the_content();?>
     <hr/>
   <!-- The sponser view     --> 
  
-<div class = "row">
-<div class="col-sm-4 sponsor-logo"><?php dynamic_sidebar( 'UPS sponsorer' ); ?></div>
-<div class="col-sm-4"></div>
-<div class="col-sm-4"></div>
-</div>
+
   <!-- End the sponser view     --> 
     </div>
-<div class="col-sm-3 ">
-	<div class ="bg-2 card">
-      
-	  <?php dynamic_sidebar( 'UPS seneste nyheder' ); ?>
 
-    </div>
-    <div class = "bg-1 card move-top sidebar-menu">
-    
-  <?php $side_menu = new MenuViewController();
-    $side_menu->sidebarMenu('Right sidebar menu');
-	//$myWidget = new Widget();?>
-  <?php  //$myWidget->displayResourcesWidget();  ?>
-    </div>
-	<div class = "bg-2 card">
-      <?php dynamic_sidebar( 'Stamoplysninger' ); ?>
-    </div>
-  </div>
 </div>
  
 

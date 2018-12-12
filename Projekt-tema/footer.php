@@ -1,12 +1,18 @@
 			<!-- footer -->
 			<footer> 
   
-    <div class = "row">
-      <div  class="col-lg-4 text-center">  <p><br/>&copy; UU DANMARK 2018</p> </div>
-      <div  class="col-lg-4 text-center"> <br/>For mere info. uudk@uudanmark.dk</div>
-      <div  class="col-lg-4 text-center"> <br/><a href = "https://ungepåsporet.nu/privatlivspolitik/">Læs vores persondatapolitik</a></div>
+    <div class = "container">
+		<div class = "row">
+			
+      <div class="col-lg-4 ">  <p class = "uudk-copyright"><br/>&copy; UU DANMARK 2018</p> </div>
+	<div class="col-lg-4 ">  <p class = "uudk-copyright"><img src = "https://xn--ungevrk-qxa.dk/wp-content/uploads/2018/12/UUDanmark.png " width = "150" /></p> </div>
+
+	  
+      
+     
+			</div>
     </div>
-   
+   </div>
 </footer>
 			<!-- /footer -->
 

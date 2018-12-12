@@ -1,6 +1,37 @@
 <?php
 
-class Widget {
+class Widgets {
+	
+	
+	public function arphabet_widgets_init(){
+		register_sidebar( array(
+		'name'          => 'Stamoplysninger',
+		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => 'Subheader left',
+		'id'            => 'subheader-left',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => 'Subheader right',
+		'id'            => 'subheader-right',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+	}
 	
     //Display the Categorymenu with the postcount and the markup of selected category
     public function displayResourcesWidget(){
@@ -79,7 +110,7 @@ class Widget {
 	}
     
 }
-
+$widget = new Widgets();
 
 ?>
 

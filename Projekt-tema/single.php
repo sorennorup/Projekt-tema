@@ -28,17 +28,12 @@
 	 
     <?php the_content();?>
     <hr/>
-   <div class = "row"></div>
-
+   
+</div>
 
 
 </div>
-<div class = "col-sm-3">
-		 <div class = "bg-2 card sidebar-menu">
-	<?php $myWidget = new Widget();?>
-    <?php $myWidget->displayResourcesWidget() ?>
-  
-    </div>
+
 	</div>
  
 

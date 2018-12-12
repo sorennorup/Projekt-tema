@@ -1,0 +1,53 @@
+#login h1 a {
+   background-image: url("https://ungemedkant.dk/wp-content/uploads/2018/08/cropped-UMKSD-fin-clean300-1.png");
+   background-size: 200px;
+   background-position: left;
+   width:200px;
+   
+    
+}
+.login form{
+box-shadow:none;
+padding:20px;
+}
+#login {
+background:
+#FFF;
+margin: 50px auto;
+padding: 40px 20px;
+width: 400px;
+}
+.login label {
+color:
+#555;
+font-size: 14px;
+}
+.login form .forgetmenot{
+float:none;
+}
+
+#login form p.submit{
+margin-top:15px;
+}
+.login.wp-core-ui .button-primary {
+background:#74AFAD;
+
+color:
+#FFF;
+text-shadow: none;
+float: none;
+clear: both;
+display: block;
+width: 100%;
+padding: 7px;
+height: auto;
+font-size: 15px;
+}
+p#nav
+{
+display: none;
+}
+p#backtoblog
+{
+display: none;
+}

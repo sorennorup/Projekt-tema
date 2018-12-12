@@ -1,6 +1,8 @@
 <?php $count = 1;?>
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-   
+   <?php $cat = get_the_category()?>
+   <?php $term_id =  $cat[0]->term_id; ?>
+			
      <?php if ($count < 5) : ?> <div class = "col-lg-3 mb-4">
 	   
 		<?php elseif ($count == 5): ?>
@@ -20,7 +22,7 @@
 		<!-- post title -->
 		 <? if($count % 2 == 0):?> <div class = "card-header bg-1">
 		 <? else: ?>  
-		 <div class = "card-header bg-2">
+		 <div class = "card-header bg-1">
 		 <? endif ?>
 			
 		<h6>
@@ -28,6 +30,7 @@
 			 <?php $count++;?> 
 			
 			<?php the_title(); ?>
+			
 		</h6>
 		</div>
 		<!-- /post title -->
@@ -39,7 +42,10 @@
 			<div class = "card-text loop"><?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?></div>
 				
 			 <!-- post details -->
+			 <!-- if the category isn't projektpartere then display the postdate -->
+			  <? if($term_id != 4) : ?>
 		<span class="date"><?php _e( 'Udgivet ', 'html5blank' ); the_time('j F, Y'); ?> <?php  ?></span>
+		<?php endif; ?>
 		<span class="author"><?php //the_author_posts_link(); ?></span>
 		<!--<span class="comments"><?php// if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>-->
 		<!-- /post details -->

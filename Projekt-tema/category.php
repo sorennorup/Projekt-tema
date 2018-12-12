@@ -13,9 +13,22 @@
 			<div class = "row">
 			<?php get_template_part('loop'); ?>
 
+
 			<?php get_template_part('pagination'); ?>
 			</div>
+			 <hr/>
+						<div class = "row">
+  <div class="col-sm-12"><h3>Funded by Erasmus+</h3></div>
+  </div>
+
+<div class = "row">
+<div class="col-sm-4 sponsor-logo"><?php dynamic_sidebar( 'UPS sponsorer' ); ?></div>
+<div class="col-sm-4"></div>
+<div class="col-sm-4"></div>
+</div>
 		</div>
+		
+		
 		</div>
 		</div>
 	</main>
