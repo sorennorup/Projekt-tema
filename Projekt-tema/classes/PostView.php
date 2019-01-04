@@ -16,7 +16,7 @@ class PostView {
 		$number_off_posts = count($allposts);
 
      echo '<h3>'.get_the_title().'</h3>';
-     echo '<div class = "row">';
+     echo '<div class = "row main-row">';
 	    $count = 0;
     foreach( $allposts as $post ): setup_postdata( $post );
 		
